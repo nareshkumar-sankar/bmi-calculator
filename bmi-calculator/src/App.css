@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" , sans-serif ;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #535c68;
+}
+.bmi-calculator{
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.box{
+  width: 350px;
+  background-image: url("assets/Diet-pana.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.data{
+  flex: 1;
+  padding: 15px;
+}
+h1{
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  color: #2980b9;
+}
+.input-container{
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 4px;
+  font-size: 18px;
+  outline: none;
+}
+button{
+  background-color: #3498db;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: backgound-color 0.3s;
+}
+
+button:hover{
+  background-color: #2980b9;
+}
+.result{
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+#clear{
+  margin-left: 20px;
+}
+.result p{
+  color: #555;
+  margin: 10px 0px;
+}
+
+.result p:first-child{
+  font-weight: bold;
+  color: #3498db;
+}
+.error{
+  border: 1px#e74c3c;
+  border-radius: 10px 5px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+@media screen  And (max-width:450px){
+  .bmi-calculator{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  .box{
+    display: none;
+  }
+  .error{
+    border: 1px#e74c3c;
+    border-radius: 10px 5px;
+    padding: 10px 5px;
+    font-size: 12px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  h1{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    color: #2980b9;
+    text-align: center;
+  }
+}
